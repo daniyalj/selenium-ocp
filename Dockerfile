@@ -12,4 +12,10 @@ RUN pwd
 
 RUN ls
 
+ENV ChromeDriver=/usr/bin/google-chrome
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
+ENV M2_HOME=opt/rh/rh-maven33/root/usr/share/maven
+ENV M2=$M2_HOME/bin
+ENV PATH=$JAVA_HOME:$GeckoDriver:$ChromeDriver:$M2:$PATH
+
 USER 1001
