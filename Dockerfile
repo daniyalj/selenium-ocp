@@ -11,3 +11,5 @@ RUN ls /usr/lib/
 RUN pwd
 
 RUN ls
+
+USER 1001
