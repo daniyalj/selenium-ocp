@@ -4,8 +4,9 @@ USER root
 
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
-#RUN yum -y update
+# RUN yum -y update
 RUN yum -y install google-chrome-stable_current_x86_64.rpm
+RUN ls /usr/local/
 
 RUN pwd
 
